@@ -145,6 +145,25 @@ body {
   font-size: 16px;
 }
 
+.mini-faq {
+  padding: 60px 20px;
+  background-color: #f8f8f8;
+}
+
+.mini-faq h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+}
+
+.faq-item h3 {
+  margin-bottom: 10px;
+}
+
 .footer {
   padding: 40px 0;
 }
