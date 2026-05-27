@@ -14,6 +14,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17940973546"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'AW-17940973546');
+    </script>
+    
   </head>
   <body>
     <!-- HERO -->
@@ -38,9 +48,9 @@
           </svg>
         </a>
         <a
-          href="https://wa.me/5547991741700?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20processo%20de%20análise."
+          href="https://wa.me/5547991741700?text=Olá,%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20solicitar%20uma%20conversa%20inicial."
           target="_blank"
-          class="insta-link"
+          class="insta-link btn-whatsapp"
           aria-label="WhatsApp"
         >
           <svg
@@ -80,8 +90,8 @@
           </p>
 
           <a
-            href="https://wa.me/5547991741700?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20processo%20de%20análise."
-            class="btn"
+            href="https://wa.me/5547991741700?text=Olá,%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20solicitar%20uma%20conversa%20inicial."
+            class="btn btn-whatsapp"
           >
             Entrar em contato
           </a>
@@ -202,8 +212,8 @@
         </p>
 
         <a
-          href="https://wa.me/5547991741700?text=Olá,%20gostaria%20de%20solicitar%20uma%20conversa%20inicial."
-          class="btn"
+          href="https://wa.me/5547991741700?text=Olá,%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20solicitar%20uma%20conversa%20inicial."
+          class="btn btn-whatsapp"
         >
           Solicitar conversa inicial
         </a>
@@ -219,5 +229,28 @@
         </p>
       </div>
     </footer>
+    
+    <script>
+      // Garante que o script só rode após o HTML inteiro estar carregado
+      document.addEventListener('DOMContentLoaded', function() {
+    
+        // Mapeia todos os botões do WhatsApp na página
+        var botoesWhatsApp = document.querySelectorAll('.btn-whatsapp');
+
+        // Adiciona o gatilho de clique em cada um deles
+        botoesWhatsApp.forEach(function(botao) {
+          botao.addEventListener('click', function() {
+        
+            // Dispara o evento de conversão para o Google Ads
+            gtag('event', 'conversion', {
+                'send_to': 'AW-17940973546/OfOQCNTzybQcEOqP9upC'
+            });
+        
+          });
+        });
+    
+      });
+    </script>
+    
   </body>
 </html>
