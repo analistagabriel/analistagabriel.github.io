@@ -218,7 +218,7 @@ body {
 }
 
 .disclaimer {
-  font-size: 11px;
+  font-size: 14px;
   color: #777;
   line-height: 1.5;
   letter-spacing: 0.3px;
@@ -257,5 +257,160 @@ body {
 
   .section {
     padding: 14px 0;
+  }
+}
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer {
+  margin-top: 70px;
+
+  padding: 55px 0 35px;
+
+  background: #ebe7df;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.footer-disclaimer {
+  padding-bottom: 35px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+  margin-bottom: 40px;
+}
+
+.footer-disclaimer p {
+  font-size: 14px;
+
+  color: #777;
+
+  line-height: 1.8;
+
+  max-width: 560px;
+}
+
+.footer-main {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.footer-main h4 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 28px;
+
+  font-weight: 600;
+
+  color: #222;
+
+  margin: 0;
+}
+
+.footer-role {
+  color: #666;
+
+  font-size: 15px;
+
+  letter-spacing: 0.4px;
+
+  margin-bottom: 10px;
+}
+
+.footer-location {
+  color: #666;
+
+  line-height: 1.7;
+
+  font-size: 14px;
+}
+
+.footer-email {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 6px;
+}
+
+.footer-email a {
+  color: #18382a;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.footer-email a:hover {
+  opacity: 0.7;
+}
+
+.email-icon {
+  color: #18382a;
+
+  flex-shrink: 0;
+}
+
+.footer-links {
+  margin-top: 18px;
+
+  display: flex;
+
+  gap: 14px;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+.footer-links span {
+  color: #bbb;
+}
+
+.footer-links a {
+  color: #666;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #18382a;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+
+  padding-top: 24px;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+
+  text-align: center;
+
+  color: #999;
+
+  font-size: 12px;
+
+  letter-spacing: 0.4px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 45px 0 30px;
+  }
+
+  .footer-main h4 {
+    font-size: 24px;
+  }
+
+  .footer-links {
+    gap: 10px;
   }
 }

@@ -15,15 +15,19 @@
     />
     <link rel="stylesheet" href="style.css" />
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17940973546"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-17940973546"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      
-      gtag('config', 'AW-17940973546');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-17940973546");
     </script>
-    
   </head>
   <body>
     <!-- HERO -->
@@ -147,8 +151,9 @@
         </ul>
 
         <p class="paragraph">
-          Mais do que eliminar sintomas, aliviar sofrimento, o trabalho busca
-          compreender o que eles significam e para onde nos levam.
+          O trabalho busca compreender o que esses sintomas significam, para
+          onde nos levam. Esse movimento da energia psíquica pode auxiliar a
+          aliviar o sofrimento, colocá-lo em perspectiva, trazer aceitação.
         </p>
       </div>
     </section>
@@ -165,16 +170,15 @@
           conjuntamente a possibilidade de início do trabalho.
         </p>
 
-        <p class="paragraph">Essa conversa não possui custo.</p>
-
         <p class="paragraph">
-          Havendo alinhamento, as sessões ocorrem semanalmente, com duração de
-          50 minutos, em formato online.
+          Somente se houver alinhamento de expectativas, vamos combinar o início
+          das sessões, que acontecem semanalmente, com duração de 50 minutos, em
+          formato online.
         </p>
 
         <p class="paragraph">
-          O atendimento é individual, confidencial e estruturado dentro de um
-          enquadre clínico claro.
+          O atendimento é individual, confidencial e estruturado para criação de
+          um ambiente seguro.
         </p>
       </div>
     </section>
@@ -223,34 +227,73 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container narrow">
-        <p class="disclaimer">
-          Atendimento voltado ao autoconhecimento e desenvolvimento pessoal. Não
-          substitui acompanhamento médico ou psiquiátrico.
-        </p>
+        <div class="footer-disclaimer">
+          <p>
+            Atendimento voltado ao autoconhecimento e desenvolvimento pessoal.
+            Este trabalho não substitui acompanhamento médico ou psiquiátrico.
+          </p>
+        </div>
+
+        <div class="footer-main">
+          <h4>Gabriel Souza</h4>
+
+          <p class="footer-role">Analista Junguiano</p>
+
+          <p class="footer-location">
+            Atendimento Online<br />
+            Camboriú • SC • Brasil
+          </p>
+
+          <p class="footer-email">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              class="email-icon"
+            >
+              <path
+                d="M2 5h20v14H2zm18 2.2-8 5.8-8-5.8V17h16zM4.5 7l7.5 5.4L19.5 7z"
+              />
+            </svg>
+
+            <a href="mailto:gbsouza.aj@gmail.com"> gbsouza.aj@gmail.com </a>
+          </p>
+
+          <div class="footer-links">
+            <a href="politica-de-privacidade.html" target="_blank">
+              Política de Privacidade
+            </a>
+
+            <span>•</span>
+
+            <a href="termos-de-uso.html" target="_blank"> Termos de Uso </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2026 Gabriel Souza. Todos os direitos reservados.
+        </div>
       </div>
     </footer>
-    
+
     <script>
       // Garante que o script só rode após o HTML inteiro estar carregado
-      document.addEventListener('DOMContentLoaded', function() {
-    
+      document.addEventListener("DOMContentLoaded", function () {
         // Mapeia todos os botões do WhatsApp na página
-        var botoesWhatsApp = document.querySelectorAll('.btn-whatsapp');
+        var botoesWhatsApp = document.querySelectorAll(".btn-whatsapp");
 
         // Adiciona o gatilho de clique em cada um deles
-        botoesWhatsApp.forEach(function(botao) {
-          botao.addEventListener('click', function() {
-        
+        botoesWhatsApp.forEach(function (botao) {
+          botao.addEventListener("click", function () {
             // Dispara o evento de conversão para o Google Ads
-            gtag('event', 'conversion', {
-                'send_to': 'AW-17940973546/OfOQCNTzybQcEOqP9upC'
+            gtag("event", "conversion", {
+              send_to: "AW-17940973546/OfOQCNTzybQcEOqP9upC",
             });
-        
           });
         });
-    
       });
     </script>
-    
   </body>
 </html>
